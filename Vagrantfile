@@ -5,4 +5,5 @@ Vagrant.configure("2") do |config|
   config.vm.box = "debian/stretch64"
   config.vm.box_version = "9.0.0"
   config.vm.provision "shell", path: "init.sh"
+  config.vm.provision "shell", path: "init_user.sh", privileged: false
 end
