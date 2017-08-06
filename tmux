@@ -1,0 +1,41 @@
+# set -g prefix C-a
+# unbind C-b
+# bind C-a send-prefix
+
+set-window-option -g xterm-keys on
+set -g default-terminal "screen-256color"
+set -sg escape-time 0
+
+# set-window-option -g xterm-keys on
+=======
+set -g history-limit 10000
+
+set -g mouse on
+
+# set window and pane index to 1 (0 by default)
+set-option -g base-index 1
+setw -g pane-base-index 1
+
+# set color for status bar
+set-option -g status-bg colour235 #base02
+set-option -g status-fg yellow #yellow
+set-option -g status-attr dim 
+
+# set window list colors - red for active and cyan for inactive
+set-window-option -g window-status-fg brightblue #base0
+set-window-option -g window-status-bg colour236 
+set-window-option -g window-status-attr dim
+
+set-window-option -g window-status-current-fg brightred #orange
+set-window-option -g window-status-current-bg colour236 
+set-window-option -g window-status-current-attr bright
+
+# show session name, window & pane number, date and time on right side of status bar
+set -g status-right-length 60
+set -g status-right "#[fg=yellow]%d %b %Y #[fg=green]:: %l:%M %p"
+
+set-window-option -g mode-keys vi
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+
+bind-key C-b last-window
