@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/vim-color-solarized"]
 	path = .vim/bundle/vim-color-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/bclose"]
+	path = .vim/bundle/bclose
+	url = https://github.com/rbgrouleff/bclose.vim.git
