@@ -1,4 +1,5 @@
 alias vi='vim'
 alias v='vim'
 alias c='clear'
+alias r='reset'
 alias l='ls -lrt'
