@@ -46,7 +46,7 @@ vmap S :s//g<LEFT><LEFT>
 "------  NERDTree Options  ------
 let NERDTreeIgnore=['CVS','\.dSYM$']
 let NERDTreeChDirMode=2     "setting root dir in NT also sets VIM's cd
-nmap <silent> <Leader>d :NERDTreeToggle<CR>
+nmap <silent> <Leader>D :NERDTreeToggle<CR>
 " These prevent accidentally loading files while in the NERDTree panel
 autocmd FileType nerdtree noremap <buffer> <c-left> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-h> <nop>
@@ -91,7 +91,7 @@ nmap <silent> <Leader>es :so $MYVIMRC<CR>
 " When pressing <leader>cd switch to the directory of the open buffer
 "map <Leader>cd :cd %:p:h<CR>
 " ,ct = Builds ctags
-map <Leader>ct :! /usr/local/bin/ctags -R *<CR>
+map <Leader>ct :! /usr/bin/ctags -R *<CR>
 
 " F2 = Paste Toggle (in insert mode, pasting indented text behavior changes)
 set pastetoggle=<F2>
@@ -132,11 +132,6 @@ endif
 " Agregados por mi
 "
 let localvimrc_ask=0
-let g:fuf_enumeratingLimit = 60
-let g:fuf_buffertag__php='--language-force=php --php-types=cdf'
-nmap <silent> <Leader>b :FufBuffer<CR>
-nmap <silent> <Leader>o :FufCoverageFile<CR>
-nmap <silent> <Leader>t :FufBufferTag<CR>
 nmap <silent> <Leader>m :Goyo<CR>
 
 " Marcas en columna 80
@@ -174,14 +169,13 @@ nmap <silent> <Leader>s :setlocal spell spelllang=es_es<cr>
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 
 "jedi
-let g:jedi#goto_command = "<leader>g"
-let g:jedi#usages_command = "<leader>n"
 "let g:jedi#auto_initialization = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 
 set foldmethod=indent
-set foldnestmax=10
+set foldnestmax=99
+set foldlevelstart=99
 nnoremap <space> za
 vnoremap <space> zf
 
@@ -189,3 +183,9 @@ vnoremap <space> zf
 set nobackup
 set nowritebackup
 set noswapfile
+
+nnoremap Q <nop>
+
+
+let g:ctrlp_extensions = ['tag']
+nmap <Leader>t :CtrlPBufTag<Return>
