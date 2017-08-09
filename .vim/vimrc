@@ -189,3 +189,4 @@ nnoremap Q <nop>
 
 let g:ctrlp_extensions = ['tag']
 nmap <Leader>t :CtrlPBufTag<Return>
+nmap <Leader>o :CtrlP<Return>

@@ -26,6 +26,7 @@ cd ~/vim/src
 ./configure --enable-pythoninterp --enable-python3interp --with-features=huge --prefix=$HOME/opt/vim
 make clean && make && make install
 ln -s ~/opt/vim/bin/vim ~/bin/vim
+ln -s ~/opt/vim/bin/vimdiff ~/bin/vimdiff
 ln -s ~/.dotfiles/.vim/vimrc ~/.vimrc
 ln -s ~/.dotfiles/.vim/ ~/.vim
 rm -rf ~/vim
@@ -45,3 +46,6 @@ ln -s ~/.dotfiles/xfce_solarized_terminal ~/.config/xfce4/terminal/terminalrc
 # Ipython
 mkdir -p ~/.ipython/profile_default
 ln -s ~/.dotfiles/ipython_config.py ~/.ipython/profile_default/ipython_config.py
+
+# Git
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig

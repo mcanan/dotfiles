@@ -1,0 +1,52 @@
+[diff]
+	tool = vimdiff
+[merge]
+    tool = vimdiff
+    log = true
+[difftool]
+	prompt = false
+[color]
+	ui = true
+[core]
+	editor = vim
+[user]
+	name = Marcos Canán
+	email = mcanan@gmail.com
+[github]
+    user = mcanan
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = mcanan@gmail.com
+	smtpServerPort = 587
+	smtppass = semthnrtoakehrig
+	from = Marcos Canán <mcanan@gmail.com>
+[push]
+	default = matching
+[alias]
+    last = log -1 HEAD
+ 	l = log --pretty=format:'%C(yellow)%h%C(magenta)%d%Creset %s %C(cyan)%cr%Creset' --graph -n 20
+    s = status -sb
+    # Show the diff between the latest commit and the current state
+    d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+    # List aliases
+    aliases = config --get-regexp alias
+[format]
+    pretty = oneline
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+    remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold # line info
+	old = red # deletions
+    new = green # additions
+[color "status"]
+	added = yellow
+	changed = green
+    untracked = cyan
+[help]
+	# Automatically correct and execute mistyped commands
+    autocorrect = 1
+
