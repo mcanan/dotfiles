@@ -23,7 +23,8 @@ git clone --recursive https://github.com/mcanan/dotfiles.git ~/.dotfiles
 # Vim
 git clone https://github.com/vim/vim.git ~/vim
 cd ~/vim/src
-./configure --enable-pythoninterp --enable-python3interp --with-features=huge --prefix=$HOME/opt/vim
+./configure --enable-pythoninterp --enable-python3interp --with-features=huge\
+    --prefix=$HOME/opt/vim
 make clean && make && make install
 ln -s ~/opt/vim/bin/vim ~/bin/vim
 ln -s ~/opt/vim/bin/vimdiff ~/bin/vimdiff
@@ -52,3 +53,8 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Install
 python -m nltk.downloader stopwords
+pip install jedi scikit-learn numpy pandas scipy matplotlib seaborn nltk ipython\
+    pep8 pep257 pylint virtualenv virtualenvwrapper
+
+mkdir -p ~/.virutalenvs
+mkdir -p ~/devel

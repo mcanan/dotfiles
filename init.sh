@@ -5,8 +5,7 @@ sudo apt-get update
 sudo apt-get install -y git
 
 # Python
-sudo apt-get install -y git python-dev python3-dev python-pip python3-pip pep8 pylint
-sudo pip install jedi scikit-learn numpy pandas scipy nltk ipython pep257
+sudo apt-get install -y git python-dev python3-dev python-pip python3-pip
 
 # Vim, tmux
 sudo apt-get remove -y vim vim-common

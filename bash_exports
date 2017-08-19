@@ -1,5 +1,8 @@
 export PATH=~/bin:$PATH
+export PATH=~/.local/bin:$PATH
 export PATH=/usr/local/cuda/bin:$PATH
 export TERM=xterm-256color
 export EDITOR=vim
 export LD_LIBRARY_PATH=/usr/lib/nvidia-cuda-toolkit/lib64/:$LD_LIBRARY_PATH
+export WORKON_HOME=~/.virtualenvs
+export PROJECT_HOME=~/devel
