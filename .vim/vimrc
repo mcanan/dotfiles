@@ -135,7 +135,7 @@ let localvimrc_ask=0
 nmap <silent> <Leader>m :Goyo<CR>
 
 " Marcas en columna 80
-highlight ColorColumn ctermbg=260 ctermfg=black
+highlight ColorColumn ctermbg=blue ctermfg=white
 call matchadd('ColorColumn', '\%80v', 100)
 
 "====[ Use persistent undo ]=================

@@ -49,3 +49,6 @@ ln -s ~/.dotfiles/ipython_config.py ~/.ipython/profile_default/ipython_config.py
 
 # Git
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
+# Install
+python -m nltk.downloader stopwords
