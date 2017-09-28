@@ -14,5 +14,7 @@ tmux new-window -t $SESSION:2 -n "ipython"
 tmux new-window -t $SESSION:3 -n "shell"
 tmux new-window -t $SESSION:4 -n "ssh"
 tmux new-window -t $SESSION:5 -n "wiki"
-tmux select-pane -t $SESSION:4 -P 'fg=green,bg=black'
+tmux new-window -t $SESSION:6 -n "bc"
+tmux new-window -t $SESSION:7 -n "home"
+tmux select-pane -t $SESSION:4 -P 'fg=colour76'
 tmux attach -t $SESSION:1
