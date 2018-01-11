@@ -118,9 +118,9 @@ noremap K <nop>
 map <Leader>? :Helptags<CR>
 
 set t_Co=256
-"colorscheme hybrid
+colorscheme hybrid
 "colorscheme seoul256-light
-colorscheme solarized           "This theme works great in 256 colors
+"colorscheme solarized           "This theme works great in 256 colors
 set background=dark
 set mouse=a                     "This allows mouse scrolling in terminal, and selection of text
 set t_ut=
@@ -172,6 +172,7 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 "let g:jedi#auto_initialization = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
+let g:jedi#show_call_signatures = 0
 
 set foldmethod=indent
 set foldnestmax=99

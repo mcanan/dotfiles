@@ -31,6 +31,7 @@ ln -s ~/opt/vim/bin/vimdiff ~/bin/vimdiff
 ln -s ~/.dotfiles/.vim/vimrc ~/.vimrc
 ln -s ~/.dotfiles/.vim/ ~/.vim
 rm -rf ~/vim
+mkdir -p ~/tmp/.vim_undo_files
 
 # Bash
 ln -s ~/.dotfiles/bash_profile ~/.bash_profile
