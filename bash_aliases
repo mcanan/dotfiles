@@ -1,5 +1,10 @@
-alias vi='vim'
-alias v='vim'
+alias vim='~/bin/vim'
+alias vi='~/bin/vim'
+alias v='~/bin/vim'
 alias c='clear'
 alias r='reset'
 alias l='ls -lrt'
+alias proyecto='cd ~/proyectos/clientes/proyecto/;py_ide.sh'
+alias python=python3
+alias pip=pip3
+alias sudo='sudo '
