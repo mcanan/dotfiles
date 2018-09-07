@@ -136,7 +136,7 @@ nmap <silent> <Leader>m :Goyo<CR>
 
 " Marcas en columna 80
 highlight ColorColumn ctermbg=blue ctermfg=white
-call matchadd('ColorColumn', '\%80v', 100)
+call matchadd('ColorColumn', '\%80v', 80)
 highlight MatchParen cterm=bold ctermbg=green ctermfg=gray
 
 "====[ Use persistent undo ]=================
