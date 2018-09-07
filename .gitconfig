@@ -19,7 +19,7 @@
 	smtpServer = smtp.gmail.com
 	smtpUser = mcanan@gmail.com
 	smtpServerPort = 587
-	smtppass = semthnrtoakehrig
+	smtppass = XXXXXXXXX
 	from = Marcos Canán <mcanan@gmail.com>
 [push]
 	default = matching
