@@ -58,4 +58,4 @@ pip install jedi scikit-learn numpy pandas scipy matplotlib seaborn nltk ipython
     pep8 pep257 pylint virtualenv virtualenvwrapper keras tensorflow h5py Pillow
 
 mkdir -p ~/.virutalenvs
-mkdir -p ~/devel
+mkdir -p ~/proyectos
