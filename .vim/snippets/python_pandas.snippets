@@ -1,0 +1,32 @@
+snippet pandas_read_csv
+	import pandas as pd
+
+	path = 'file.csv'
+	df = pd.read_csv(path)
+	df = df.set_index('Column')
+	df.head()
+	
+snippet pandas_clean
+	# Drop columns
+	to_drop = ['col_1', 'col_2']
+	df.drop(to_drop, inplace=True, axis=1)
+
+	# Drop duplicates
+	df.drop_duplicates(inplace=True)
+
+	# Transform
+	a_to_b = {
+		'a': 'b'
+	}
+	df['col_3'] = data['col_3'].map(a_to_b)
+
+	df = df.fillna({'col_1': 0, 'col_2': data['col_2'].mean()})
+
+	df = df.dropna()
+
+snippet pandas_groupby
+	df['data1'].groupby(df['key1']).mean()
+
+snippet pandas_parsedate
+	dateparse = lambda x: pd.datetime.strptime(x, '%Y-%m-%d %H:%M:%S')
+	df = pd.read_csv(infile, parse_dates=['datetime'], date_parser=dateparse)

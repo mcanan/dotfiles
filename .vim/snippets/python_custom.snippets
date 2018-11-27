@@ -1,0 +1,22 @@
+snippet fopen
+	with open('${0:file.txt}', 'r') as f:
+	    contents = f.readlines()
+	    print(contents)
+
+snippet fopen2
+	with open('${0:file.txt}', 'r') as f:
+		lines = []
+		for line in f:
+			lines.append(line)
+		return lines
+
+snippet argparse
+	import argparse
+
+	parser = argparse.ArgumentParser()
+	parser.add_argument('--p_bool', action='store_true', default=False)
+	parser.add_argument('--p_str', default='')
+	args = parser.parse_args()
+	args = vars(args)
+	p_bool = args['p_bool']
+	p_str = args['p_str']
