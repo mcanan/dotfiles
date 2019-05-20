@@ -170,7 +170,7 @@ nmap <silent> <Leader>s :setlocal spell spelllang=es_es<cr>
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 
 "jedi
-"let g:jedi#auto_initialization = 0
+let g:jedi#auto_initialization = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 let g:jedi#show_call_signatures = 0
@@ -193,3 +193,7 @@ let g:ctrlp_extensions = ['tag']
 nmap <Leader>t :CtrlPBufTag<Return>
 nmap <Leader>o :CtrlP<Return>
 nmap <Leader>b :CtrlPBuffer<Return>
+
+set backupcopy=yes
+
+au VimEnter * if &diff | execute 'windo set wrap' | endif
