@@ -28,7 +28,7 @@
  	l = log --pretty=format:'%C(yellow)%h%C(magenta)%d%Creset %s %C(cyan)%cr%Creset' --graph -n 20
     s = status -sb
     # Show the diff between the latest commit and the current state
-    d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+	d = difftool
     # List aliases
     aliases = config --get-regexp alias
 [format]
@@ -49,6 +49,7 @@
 [help]
 	# Automatically correct and execute mistyped commands
     autocorrect = 1
-
 [credential]
-	helper = cache
+    helper = cache
+[pager]
+      status = true
