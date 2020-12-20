@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install -y git
 
 # Python
-sudo apt-get install -y git python-dev python3-dev python-pip python3-pip
+sudo apt-get install -y git python3-dev python3-pip
 
 # Vim, tmux
 sudo apt-get remove -y vim vim-common

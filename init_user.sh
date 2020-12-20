@@ -53,9 +53,5 @@ ln -s ~/.dotfiles/ipython_config.py ~/.ipython/profile_default/ipython_config.py
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Install
-python -m nltk.downloader stopwords
-pip install jedi scikit-learn numpy pandas scipy matplotlib seaborn nltk ipython\
-    pep8 pep257 pylint virtualenv virtualenvwrapper keras tensorflow h5py Pillow
-
-mkdir -p ~/.virutalenvs
-mkdir -p ~/proyectos
+pip3 install jedi scikit-learn numpy pandas scipy matplotlib ipython\
+    pep8 pep257 pylint virtualenv
