@@ -197,3 +197,4 @@ nmap <Leader>l :CtrlPBuffer<Return>
 set backupcopy=yes
 
 au VimEnter * if &diff | execute 'windo set wrap' | endif
+let g:snipMate = { 'snippet_version' : 1 }
